@@ -56,12 +56,19 @@ section.home
           background-color: rgba(#fafafa, .9)
           color:  #333
 
+        > .s-new, .s-ep
+          // transform: scaleX(0)
+          width: 0
+          padding: 0
+          opacity: 0
+
       span
         +transition
         line-height: 50px
+        display: inline-block
+        overflow: hidden
 
         &.img-dog
-          display: inline-block
           background:
             image: url(../img/dog.png)
             size: cover
@@ -76,6 +83,8 @@ section.home
           transform-origin: center
 
         &.s-new
+          // transform: scaleX(1)
+
           padding: .5rem .5rem .5rem 1rem
           // font-weight: 600
           border-top-left-radius: 50px
