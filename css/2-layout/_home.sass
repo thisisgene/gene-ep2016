@@ -34,6 +34,61 @@ section.home
       text-align: center
       color: #fafafa
       margin-top: 0
+      &:hover
+        > .img-dog
+          transform: scale(1)
+          width: 40px
+
+        > .s-black
+          background-color: rgba(#7f6ba6, .9)
+          color: lighten(#b5c886, 15%)
+        > .s-dogs
+          background-color: rgba(lighten(#b5c886, 15%), .9)
+          color:  #7f6ba6
+
+      span
+        +transition
+
+        &.img-dog
+          display: inline-block
+          background:
+            image: url(../img/dog.png)
+            size: cover
+
+          width: 0px
+          height: 40px
+          z-index: 1
+          transform: scale(0.1)
+          transform-origin: center
+
+        &.s-new
+          padding: .5rem .5rem .5rem 1rem
+          // font-weight: 600
+          border-top-left-radius: 50px
+          border-bottom-left-radius: 50px
+          // background-color: rgba(#b38186, .5)
+          // color: #76938e
+        &.s-black
+          padding: .5rem .5rem
+          background-color: rgba(lighten(#b5c886, 15%), .9)
+          color: #7f6ba6
+          font-weight: 300
+          text-transform: uppercase
+        &.s-dogs
+          padding: .5rem .5rem
+          background-color: rgba(#7f6ba6, .9)
+          color: lighten(#b5c886, 15%)
+          font-weight: 300
+          text-transform: uppercase
+        &.s-ep
+          padding: .5rem 1rem .5rem .5rem
+          // font-weight: 600
+          border-top-right-radius: 50px
+          border-bottom-right-radius: 50px
+          // background-color: rgba(#76938e, .5)
+          // color: #7f6ba6
+
+
 
   .ep-cover--wrapper
     // padding-left: 4rem

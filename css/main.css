@@ -389,6 +389,48 @@ section.home {
     text-align: center;
     color: #fafafa;
     margin-top: 0; }
+    section.home header h2:hover > .img-dog {
+      transform: scale(1);
+      width: 40px; }
+    section.home header h2:hover > .s-black {
+      background-color: rgba(127, 107, 166, 0.9);
+      color: #d5e0bb; }
+    section.home header h2:hover > .s-dogs {
+      background-color: rgba(213, 224, 187, 0.9);
+      color: #7f6ba6; }
+    section.home header h2 span {
+      -webkit-transition: all 0.15s ease-out 0s;
+      -moz-transition: all 0.15s ease-out 0s;
+      transition: all 0.15s ease-out 0s; }
+      section.home header h2 span.img-dog {
+        display: inline-block;
+        background-image: url(../img/dog.png);
+        background-size: cover;
+        width: 0px;
+        height: 40px;
+        z-index: 1;
+        transform: scale(0.1);
+        transform-origin: center; }
+      section.home header h2 span.s-new {
+        padding: 0.5rem 0.5rem 0.5rem 1rem;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px; }
+      section.home header h2 span.s-black {
+        padding: 0.5rem 0.5rem;
+        background-color: rgba(213, 224, 187, 0.9);
+        color: #7f6ba6;
+        font-weight: 300;
+        text-transform: uppercase; }
+      section.home header h2 span.s-dogs {
+        padding: 0.5rem 0.5rem;
+        background-color: rgba(127, 107, 166, 0.9);
+        color: #d5e0bb;
+        font-weight: 300;
+        text-transform: uppercase; }
+      section.home header h2 span.s-ep {
+        padding: 0.5rem 1rem 0.5rem 0.5rem;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px; }
   section.home .ep-cover--wrapper {
     width: 100%;
     background: linear-gradient(to left, rgba(0, 0, 0, 0.1), rgba(255, 255, 255, 0.3), rgba(0, 0, 0, 0.1));

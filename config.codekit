@@ -1404,6 +1404,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/dog.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6379,
+		"inputAbbreviatedPath": "\/img\/dog.png",
+		"outputAbbreviatedPath": "\/img\/dog.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/EP_cover.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
