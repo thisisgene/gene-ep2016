@@ -36,16 +36,102 @@ section.home
       margin-top: 0
 
   .ep-cover--wrapper
-    padding-left: 8rem
+    // padding-left: 4rem
     width: 100%
-    background: rgba(white, .3)
-    overflow: visible
+    background: linear-gradient(to left, rgba(black, .1), rgba(white, .3), rgba(black, .1))
+    // overflow: visible
+    display: flex
+    flex-direction: row
+    justify-content: center
+
+    &:hover
+      > .logo-section
+        margin-left: 2rem
+
+        .cta-wrapper
+          opacity: 0
+      > .ep-cover
+        transform: scale(.8)
+        box-shadow: -4px 2px 6px rgba(black, .37)
+
 
     .ep-cover
       background:
         image: url(../img/BlackDogsEP_Cover_colors.jpg)
         size: cover
 
-      width: 369px
-      height: 369px
-      box-shadow: -4px 2px 6px rgba(black, .37)
+      width: 370px
+      height: 370px
+      box-shadow: 0px 0px 0px rgba(black, .37)
+      cursor: pointer
+      position: relative
+      z-index: 1
+      transform-origin: center
+      +transition(all 300ms ease-in-out)
+
+
+    .logo-section
+      display: flex
+      // justify-content: center
+      align-items: center
+      justify-content: space-between
+      margin-left: -12rem
+      // width: 35%
+      +transition(all 300ms ease-in-out)
+
+      .logo-wrapper
+        // background: pink
+        display: flex
+        flex-direction: column
+        align-items: flex-start
+        justify-content: center
+        // width: 470px
+        height: 370px
+        +transition
+        position: relative
+
+        .logo
+          margin: 1rem 0
+          +filter(drop-shadow(0px 2px 4px rgba(black, .1)))
+          +transition
+          cursor: pointer
+
+
+          &:hover
+            transform: scale(1.1)
+
+          &.logo--itunes
+            height: 41px
+            width: 113px
+            background:
+              image: url(../icons/iTunes.png)
+              size: cover
+          &.logo--bandcamp
+            height: 59px
+            width: 204px
+            margin: 0px 0 -4px -16px
+            background:
+              image: url(../icons/bandcamp.png)
+              size: cover
+          &.logo--spotify
+            height: 41px
+            width: 138px
+            background:
+              image: url(../icons/spotify.png)
+              size: cover
+          &.logo--google
+            height: 44px
+            width: 140px
+            background:
+              image: url(../icons/GPMLogo.png)
+              size: cover
+
+      .cta-wrapper
+        margin-left: 4rem
+        color: rgba(black, .4)
+        opacity: 1
+        +transition
+
+        h1
+          font-size: 3rem
+          +filter(drop-shadow(0px 2px 6px rgba(black, .4)))
