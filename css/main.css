@@ -367,6 +367,7 @@ textarea {
 body {
   font-family: "Futura";
   font-size: 16px;
+  height: 100%;
   width: 100%;
   background-image: url(../img/bg.jpg);
   background-size: cover;
@@ -400,11 +401,11 @@ section.home {
         transform: scale(1);
         width: 50px; }
       section.home header h2:hover > .s-black {
-        background-color: rgba(127, 107, 166, 0.9);
-        color: #d5e0bb; }
+        background-color: rgba(51, 51, 51, 0.9);
+        color: #fafafa; }
       section.home header h2:hover > .s-dogs {
-        background-color: rgba(213, 224, 187, 0.9);
-        color: #7f6ba6; }
+        background-color: rgba(250, 250, 250, 0.9);
+        color: #333; }
       section.home header h2 span {
         -webkit-transition: all 0.15s ease-out 0s;
         -moz-transition: all 0.15s ease-out 0s;
@@ -427,10 +428,12 @@ section.home {
           border-bottom-left-radius: 50px; }
         section.home header h2 span.s-black {
           padding: 0.5rem 0.5rem;
+          background-color: rgba(51, 51, 51, 0);
           font-weight: 300;
           text-transform: uppercase; }
         section.home header h2 span.s-dogs {
           padding: 0.5rem 0.5rem;
+          background-color: rgba(250, 250, 250, 0);
           font-weight: 300;
           text-transform: uppercase; }
         section.home header h2 span.s-ep {
@@ -444,7 +447,7 @@ section.home {
     flex-direction: row;
     justify-content: center; }
     section.home .ep-cover--wrapper:hover > .logo-section {
-      margin-left: 2rem; }
+      transform: translateX(8rem); }
       section.home .ep-cover--wrapper:hover > .logo-section .cta-wrapper {
         opacity: 0; }
     section.home .ep-cover--wrapper:hover > .ep-cover {
@@ -466,8 +469,8 @@ section.home {
     section.home .ep-cover--wrapper .logo-section {
       display: flex;
       align-items: center;
-      justify-content: space-between;
-      margin-left: -12rem;
+      justify-content: center;
+      transform: translateX(-12rem);
       -webkit-transition: all 300ms ease-in-out;
       -moz-transition: all 300ms ease-in-out;
       transition: all 300ms ease-in-out; }
