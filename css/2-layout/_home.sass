@@ -47,7 +47,7 @@ section.home
           transform: scale(1)
           width: 50px
           padding: .5rem
-          
+
 
         > .s-black
           background-color: rgba(#333, .9)
@@ -168,7 +168,8 @@ section.home
 
 
           &:hover
-            transform: scale(1.1)
+            +filter(drop-shadow(0px 2px 4px rgba(black, .3)))
+            transform: translate(2px, -1px)
 
           &.logo--itunes
             height: 41px

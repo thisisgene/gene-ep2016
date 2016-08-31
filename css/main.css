@@ -494,7 +494,9 @@ section.home {
           transition: all 0.15s ease-out 0s;
           cursor: pointer; }
           section.home .ep-cover--wrapper .logo-section .logo-wrapper .logo:hover {
-            transform: scale(1.1); }
+            -webkit-filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+            filter: drop-shadow(0px 2px 4px rgba(0, 0, 0, 0.3));
+            transform: translate(2px, -1px); }
           section.home .ep-cover--wrapper .logo-section .logo-wrapper .logo.logo--itunes {
             height: 41px;
             width: 113px;
